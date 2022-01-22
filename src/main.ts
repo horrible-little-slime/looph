@@ -68,7 +68,9 @@ Clan.withStash("Alliance From Heck", $items`Pantsgiving`, (borrowedItems: Item[]
     while (!volcoinoCheck() && !have($effect`Beaten Up`)) {
       adventureMacroAuto(
         $location`The Bubblin' Caldera`,
-        StrictMacro.skill($skill`Weapon of the Pastalord`).item($item`exploding cigar`)
+        StrictMacro.skill($skill`Weapon of the Pastalord`)
+          .item($item`exploding cigar`)
+          .runaway()
       );
     }
     cliExecute("hottub");
