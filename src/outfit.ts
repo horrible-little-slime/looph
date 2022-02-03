@@ -1,4 +1,14 @@
-import { canEquip, equip, equippedAmount, equippedItem, myFamiliar, useFamiliar } from "kolmafia";
+import {
+  canEquip,
+  equip,
+  equippedAmount,
+  equippedItem,
+  Familiar,
+  Item,
+  myFamiliar,
+  Slot,
+  useFamiliar,
+} from "kolmafia";
 import { $item, $slot, $slots, have } from "libram";
 
 export default class Outfit {
